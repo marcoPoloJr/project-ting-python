@@ -2,7 +2,7 @@
 import sys
 from ting_file_management.file_management import txt_importer
 
-from ting_file_management.queue import Queue
+# from ting_file_management.queue import Queue
 
 
 def process(path_file, instance):
@@ -46,6 +46,6 @@ def file_metadata(instance, position):
         print('Posição invalida', file=sys.stderr)
 
 
-project = Queue()
-test = process("statics/arquivo_teste.txt", project)
-print("RETPROCESS", test)
+# project = Queue()
+# test = process("statics/arquivo_teste.txt", project)
+# print("RETPROCESS", test)
