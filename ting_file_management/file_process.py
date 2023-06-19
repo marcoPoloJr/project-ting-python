@@ -17,13 +17,13 @@ def process(path_file, instance):
 
     dictionary = {
         'nome_do_arquivo': path_file,
-        'qtq_linhas': len(txt_file),
+        'qtd_linhas': len(txt_file),
         'linhas_do_arquivo': txt_file,
     }
 
     instance.enqueue(dictionary)
 
-    print(dictionary, file=sys.stdout)
+    print(dictionary)
     # print('DICT', dictionary,file=sys.stdout)
     # print('LENFILE', len(txt_file),file=sys.stdout)
 
@@ -43,7 +43,7 @@ def file_metadata(instance, position):
         file = instance.search(position)
         print(file, file=sys.stdout)
     except IndexError:
-        print('Posição invalida', file=sys.stderr)
+        print('Posição inválida', file=sys.stderr)
 
 
 # project = Queue()
