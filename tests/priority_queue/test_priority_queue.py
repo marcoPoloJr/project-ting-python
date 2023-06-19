@@ -1,15 +1,15 @@
-from py import test
-from tests import test_queue
-from ting_file_management.priority_queue import PriorityQueue
+"""linter"""
 import pytest
+
+from ting_file_management.priority_queue import PriorityQueue
 
 
 def test_basic_priority_queueing():
     """Aqui irá sua implementação"""
-    def mock(n):
+    def mock(number):
         return {
             'nome_do_arquivo': 'file_name',
-            'qtd_linhas': n,
+            'qtd_linhas': number,
             'linhas_do_arquivo': 'file_lines'
         }
     test_queue = PriorityQueue()
