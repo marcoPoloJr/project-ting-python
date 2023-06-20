@@ -1,3 +1,4 @@
+"""Linter"""
 
 
 def exists_word(word, instance):
@@ -18,7 +19,7 @@ def exists_word(word, instance):
 
         if len(ocurrs['ocorrencias']) > 0:
             result.append(ocurrs)
-            
+
     return result
 
 
